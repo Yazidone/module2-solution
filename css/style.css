@@ -1,0 +1,100 @@
+
+
+h1{
+    text-align: center;
+
+}
+
+
+.box{
+    display: flex;
+    grid-template-columns: 66% 33%;
+}
+
+.box2{
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 50% 50%;
+    
+
+}
+
+.card1{
+    position: relative;
+    margin-right: 10px;
+    border: 3px solid black;
+    
+}
+.card2{
+    position: relative;
+    margin-right: 10px;
+    border: 3px solid black;
+    
+}
+.card3{
+    position: relative;
+    margin-right: 10px;
+    border: 3px solid black;
+}
+h2{
+    position: absolute;
+    right: 0;
+    margin: 0;
+    top: 0;
+    border: 1px solid black;
+}
+#title1{
+    background-color: rgb(220, 102, 212);
+}
+
+#title2{
+    background-color: rgb(223, 45, 32);
+    color: aliceblue;
+}
+
+
+#title3{
+    background-color: rgb(223, 185, 32);
+    color: aliceblue;
+}
+
+
+p{
+    margin-top: 50px;
+    padding: 12px;
+    
+}
+
+
+
+
+
+/* tablete */
+@media screen and (min-width:768px) and (max-width:991px){
+   .box{
+    grid-template-rows: 100%;
+    flex-wrap: wrap;
+    
+   }
+   .card3{
+    margin-top: 10px;
+    
+
+   }
+}
+
+/* mobile */
+@media screen and (max-width:767px) {
+.box{
+    flex-wrap: wrap;
+
+}
+    .box2{
+         flex-wrap: wrap;
+    }
+    .card2, .card3{
+        margin-top: 10px;
+    }
+    
+}
+
